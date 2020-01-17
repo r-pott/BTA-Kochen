@@ -1,45 +1,103 @@
 body {
-    margin: 0;
-    font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 header {
-    background-color: white;
+  background-color: white;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  /*paading: 0 1rem;  --> Kurzschreibweise (eine Zeile) im Uhrzeigersinn: oben 0, rechts 1rem, unten 0, links 1rem */
 }
 
 a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#menu {
+  display: none;
+}
+
+#menu.show{
+    display: block;
+}
+
+#burger {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+#intro{
+    background-image: url(img/intro.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-text {
+    color: white;
+    text-align: center;
+}
+
+.button {
+    background-color: white;
+    color: #374a67;   
+    padding: 1rem;
+    border-style: solid;
+    border-color: #374a67;
+    border-width: thin;
+    /*alt. Kurzschreibweise: 
+    border: thin solid #374a67 */
+    border-radius: 4px;
     text-transform: uppercase;
     font-weight: bold;
+    box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.5);
+    display: inline-block;
+    margin-top: 1rem;
 }
 
+.card{
+    border: thin solid lightgray;
+    box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.5);
+    text-align: center;
+}
 
-#menu{
+.card img{
+    width: 100%;
+    
+}
+
+@media (min-width: 800px) {
+  #menu {
+    display: block;
+  }
+
+  #burger {
     display: none;
+  }
+
+  .unterpunkte {
+    display: flex;
+  }
+
+  .unterpunkte li {
+    margin: 8px;
+  }
 }
-
-@media (min-width:800px){
-    #menu{
-        display: block;
-    }
-
-    #burger{
-        display: none;
-    }
-
-    .unterpunkte{
-        display: flex;
-    }
-
-    .unterpunkte li{
-        margin: 8px;
-    }
-}
-

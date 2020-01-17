@@ -1,54 +1,100 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>
-            BTA Kochen
-        </title>
-        <meta name="description" content="Total leckere Rezepte für Alle unter 20 und darüber.">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <link rel="stylesheet" href="style.css">
-        
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      BTA Kochen
+    </title>
+    <meta
+      name="description"
+      content="Total leckere Rezepte für Alle unter 20 und darüber."
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="doc-header">
+      <!-- a ist das Element für eine Hyperlink -->
+      <a href="index.html">
+        <img src="img/logo.png" alt="Logo Kochen BTA" height="50" />
+      </a>
 
-    </head>
-    <body>
-        <header id="doc-header">
-            <!-- a ist das Element für eine Hyperlink -->
-            <a href="index.html">
-                <img src="img/logo.png" alt="Logo Kochen BTA" height="50">
+      <button id="burger">
+        <img src="img/menu.svg" alt="Menu" height="40" />
+      </button>
+
+      <nav id="menu">
+        <ul class="unterpunkte">
+          <li class="rot">
+            <a href="#">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Rezepte
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Kategorien
+            </a>
+          </li>
+          <li class="rot">
+            <a href="#">
+              Über uns
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="content">
+      <section id="intro">
+        <div class="intro-text">
+          <h1>Die besten Rezepte für Webworker</h1>
+          <p>Es gibt mehr als Pizza & Ravioli</p>
+          <a href="#" class="button">
+            Entdecke die Leckereien
+          </a>
+        </div>
+      </section>
+
+      <section id="Rezepte">
+        <h2>
+          Die neuesten Rezepte
+        </h2>
+
+        <div class="row">
+          <div class="card">
+            <a href="#">
+              <img src="img/pancakes.jpg" alt="leckere pancakes" />
             </a>
 
-            <button id="burger">
-                <img src="img/menu.svg" alt="Menu" height="40">
-            </button>
+            <h3>
+              <a href="#">Die leckersten Pancakes</a>
+            </h3>
 
-            <nav id="menu">
-                <ul class="unterpunkte">
-                    <li class="rot">
-                        <a href="#">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Rezepte
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Kategorien
-                        </a>
-                    </li>
-                    <li class="rot">
-                        <a href="#">
-                            Über uns
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        
-    </body>
+            <p>
+              <a href="#">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ad
+                autem possimus voluptates. Accusantium quo quam fuga id
+                consectetur exercitationem aliquid quos eveniet enim nam
+                commodi, iste vero sapiente aliquam.
+              </a>
+            </p>
 
-    
+            <a href="#" class="button">
+                Zum Rezept
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/menu.js"></script>
+  </body>
 </html>
