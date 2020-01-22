@@ -130,7 +130,25 @@ input{
   border: 1px solid #04122b;
 }
 
+#social ul{
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+}
 
+#social li{
+  margin: 1rem;
+}
+
+#legal ul{
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#doc-footer{
+  padding: 3rem 1rem;
+
+}
 
 @media (min-width: 800px) {
   #menu {
@@ -156,4 +174,13 @@ input{
     display: flex;
     justify-content: space-between;
   }
+
+  #legal ul{
+    display: flex;
+  }
+
+  #legal li{
+    margin: 1rem;
+  }
+
 }
